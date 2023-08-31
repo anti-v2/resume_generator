@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Resume Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet"  href="./style.css">
+  <body>
+
+  <div class="container"id="cv">
+      <h1 class="text-center my-2">Resume Generator</h1>
+      <hr>
+
+      <div class="row">
+        <div class="col-md-6">
+          <!---This is the  column block of Personal------------------------------------------->
+          <h3>Personal Information</h3>
+          <!--Name-->
+          <div class="form-group mt-2">
+            <label for="name">Name  </label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Your name">
+          </div>
+
+          <!--Contact-->
+          <div class="form-group mt-2">
+            <label for="contact">Contact No  </label>
+            <input type="text" class="form-control" id="contact" placeholder="Enter Your phone No">
+          </div>
+          <!--Address-->
+          <div class="form-group mt-2">
+            <label for="address">Address  </label>
+            <textarea class="form-control" id="address" placeholder="Enter your address">
+            </textarea>
+          </div>
+          <!--Email address-->
+          <div>
+          <label for="email">Email Id </label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your Email">
+        </div>
+
+          <!------------------------------------------------------------------------------------------>
+         
+
+          <!--This block is All The important links------------------------------------------------------- -->
+          <p class="text-secondary my-2">Important Links</p>
+          <div class="form-group mt-2">
+            <label for="insta">Instagram  </label>
+            <input type="text" class="form-control" id="insta" placeholder="Enter Your instagram Link">
+          </div>
+
+           <div class="form-group mt-2">
+            <label for="linkedin">LinkedIn </label>
+            <input type="text" class="form-control" id="linkedin" placeholder="Enter Your linkedin link">
+          </div>
+
+
+          <div class="form-group mt-2">
+            <label for="git">Github  </label>
+            <input type="text" class="form-control" id="git" placeholder="Enter Your github Link">
+          </div>
+
+          <div>
+          <label for="fb">Facebook </label>
+          <input type="text" class="form-control" id="fb" placeholder="Enter Your Facebook Link">
+        </div>
+
+        
+        <!--  --------------------------          ---------------------------------------------------------> 
+
+
+
+          <!--down one is div for row(Important bhai)-->
+        </div>
+        <!--------------------------------------------------------------------------------------------->
+        <!--This is the 2nd column -->
+        <div class="col-md-6">
+          <h3>Professional Information</h3>  
+          <div class="form-group mt-2">
+            <label for="objective">Objective </label>
+            <textarea 
+                   class="form-control" >
+            </textarea>
+          </div>
+        
+          <div class="form-group mt-2" id="we" >
+            <label for="">Work Experience </label>
+            <textarea rows="3" type="text" class="form-control weField" >
+            </textarea>
+
+
+<div class="container text-center mt-2" id="weAddButton">
+  <button onclick="addNewWEField()" class="btn-btn-primary btn-sm">Add More</button>
+</div> 
+</div>
+
+          <div class="form-group mt-2" id="aq">
+            <label for="">Academic Qualifiaction</label>
+            <textarea  class="form-control eqField" placeholder="Enter Your experience" >
+            </textarea>
+
+
+<div class="container text-center mt-2" id="aqAddButton">
+  <button onclick="addNewAQField()" class="btn-btn-primary btn-sm">Add More</button>
+</div>
+
+
+<div class="form-group mt-2" id="skills">
+            <label for="">Skills</label>
+            <textarea  class="form-control skillsField" placeholder="Enter Your Skills" >
+            </textarea>
+
+
+<div class="container text-center mt-2" id="skillsAddButton">
+  <button onclick="skillsField()" class="btn-btn-primary btn-sm">Add More</button>
+</div>
+
+
+
+
+
+
+<!-----buttonssssssssssssssssssssssssssssssssssss-->
+
+
+
+
+
+
+
+          </div><!--This is work experience -->
+          <!------------------------------------------------------------------------------------------->
+        </div>
+
+      </div>
+      <div class="container text-center mt-3">
+        <button class="button.btn.btn-primary.btn-lg">Generate CV</button>
+      </div>
+    </div>
+    <!--cv template-->
+    <div class="container "id="cv-template">
+      <div class="row">
+
+        <div class="col-md-4 text-center py-5 background">
+        <!--first column--> 
+<img src="https://moonvillageassociation.org/wp-content/uploads/2018/06/default-profile-picture1.jpg" 
+alt=""
+class="img"
+>
+<div class="container">
+ <p>Aniket Pradhan</p>
+ <p>+918782189129</p>
+ <p>Sector 34 Delhi,India</p>
+ <hr>
+ <p><a href="#1">https:www.youtube.com/</a>
+ <p><a href="#1">https:www.instagram.com/</a>
+ <p><a href="#1">https:www.facebook.com/</a>
+ </p>
+</div>
+        </div>
+
+
+
+
+        <div class="col-md-8 py-5">
+        <!--second column-->
+<h1 class="text-center" style="font-weight:800 ">
+  Aniket</h1>
+<!--object-card-->
+<div class="card mt-4">
+  <div class="card-header background">
+   <h3>Objective</h3> 
+  </div>
+  <div class="card-body">
+    <p>Personal Information
+
+Sector 34 Delhi,India
+
+https:www.youtube.com/
+
+https:www.instagram.com/
+
+https:www.facebook.com/
+Aniket
+</p>
+    
+  </div>
+  
+</div>
+
+
+<!--work template-->
+
+ <div class="col-md-8 py-5">
+        <!--second column-->
+<h1 class="text-center" style="font-weight:980">
+</h1>
+<!--object-card-->
+<div class="card mt-4">
+  <div class="card-header background">
+   <h3>Work Experience</h3> 
+  </div>
+  <div class="card-body">
+
+
+    <ul>
+      <li>5years at xyz comp</li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+<!--academic qualification-->
+<div class="col-md-8 py-5">
+        <!--second column-->
+<h1 class="text-center" style="font-weight:980">
+</h1>
+<!--object-card-->
+<div class="card mt-4">
+  <div class="card-header background">
+   <h3>Academic qualification</h3> 
+  </div>
+  <div class="card-body">
+
+
+    <ul>
+      <li>5years at xyz comp g src="https://moonvillageassociation.org/wp-content/uploads/2018/06/default-profile-picture1.jpg" 
+alt=""
+</li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+        <div class="col-md-8 py-5">
+        <!--second column-->
+<h1 class="text-center" style="font-weight:980">
+  </h1>
+<!--object-card-->
+<div class="card mt-4">
+  <div class="card-header background">
+   <h3>Skills </h3> 
+  </div>
+  <div class="card-body">
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+<!--cv button printing-->
+
+<div class="container mt-3 text-center">
+  <button class= "btn background">Print CV</button>
+  
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="./script.js"> </script>
+  </body>
+</html>
